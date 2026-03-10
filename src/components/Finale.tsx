@@ -1,44 +1,44 @@
 import {
   Github,
   Linkedin,
-  InstagramIcon,
   Mail,
   Heart,
-  BookOpen,
+  Code,
+  Trophy,
 } from 'lucide-react';
 
 const Finale = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/VARA4u-tech', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/TechMaestro-k', label: 'GitHub' },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/vara4u',
+      href: 'https://www.linkedin.com/in/kushagra-maheshwari24/',
       label: 'LinkedIn',
     },
     {
       icon: Mail,
-      href: 'mailto:pappuridurgavaraprasad4pl@gmail.com',
+      href: 'mailto:maheshwarikushagra2004@gmail.com',
       label: 'Email',
     },
     {
-      icon: InstagramIcon,
-      href: 'https://instagram.com/d_v_p6',
-      label: 'Instagram',
+      icon: Code,
+      href: 'https://leetcode.com/u/savvysolver004/',
+      label: 'LeetCode',
     },
     {
-      icon: BookOpen,
-      href: 'https://durgavaraprasad.hashnode.dev/',
-      label: 'Blog',
+      icon: Trophy,
+      href: 'https://codolio.com/profile/Kushagra24',
+      label: 'Codolio',
     },
   ];
 
   const marqueeTags = [
-    'Durga Vara Prasad 🚀',
-    'Full Stack Dev | Flutter | React | Blockchain | AI',
-    'Designing clean UI/UX + Smart solutions🔖',
-    'Exploring tech through Vibe Coding',
+    'Kushagra Maheshwari 🚀',
+    'Software Dev | MERN | AI | Blockchain | CP',
+    'Building scalable full-stack applications 🔖',
+    'LeetCode 1800+ | Competitive Programmer',
   ];
 
   return (
@@ -110,14 +110,14 @@ const Finale = () => {
       <div className="w-full bg-white pt-10 pb-24 md:pb-10 px-6 mt-auto border-t border-black/10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 opacity-70">
           <p className="text-[10px] md:text-[11px] font-mono text-black uppercase tracking-[0.1em] md:tracking-[0.2em] text-center md:text-left">
-            © {currentYear} Pappuri Durga Vara Prasad
+            © {currentYear} Kushagra Maheshwari
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[10px] md:text-[11px] font-mono text-black uppercase tracking-[0.1em] md:tracking-[0.2em] text-center md:text-right font-medium">
             <span className="whitespace-nowrap">Designed & Engineered</span>
             <span className="flex items-center gap-2">
               <span>with</span>
               <Heart className="w-3.5 h-3.5 text-black fill-black animate-heartbeat inline-block" />
-              <span>by Vara</span>
+              <span>by Kushagra</span>
             </span>
           </div>
         </div>

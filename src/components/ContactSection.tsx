@@ -9,9 +9,8 @@ import {
   ArrowRight,
   Github,
   Linkedin,
-  MessageCircle,
-  InstagramIcon,
-  BookOpen,
+  Code,
+  Trophy,
 } from 'lucide-react';
 
 const ContactSection = () => {
@@ -21,14 +20,13 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     playSuccess();
-    const phoneNumber = '+919550533315';
-    const text = `Name: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`;
-    const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/${phoneNumber}?text=${encodedText}`, '_blank');
+    const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+    window.open(`mailto:maheshwarikushagra2004@gmail.com?subject=${subject}&body=${body}`, '_self');
   };
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('pappuridurgavaraprasad4pl@gmail.com');
+    navigator.clipboard.writeText('maheshwarikushagra2004@gmail.com');
     playPop();
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -55,7 +53,7 @@ const ContactSection = () => {
                   Email
                 </p>
                 <p className="font-mono text-sm break-all">
-                  pappuridurgavaraprasad4pl@gmail.com
+                  maheshwarikushagra2004@gmail.com
                 </p>
               </div>
               <button
@@ -73,13 +71,13 @@ const ContactSection = () => {
 
             <div className="flex items-center gap-4 p-4 border border-foreground/10 bg-white/50 hover:border-black transition-colors duration-300">
               <div className="p-3 bg-black text-white self-start">
-                <MessageCircle className="w-5 h-5" />
+                <MapPin className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-foreground/50 mb-1">
-                  Whatsapp
+                  Location
                 </p>
-                <p className="font-mono text-sm">+91 9550533315</p>
+                <p className="font-mono text-sm">Ghaziabad, India</p>
               </div>
             </div>
           </div>
@@ -90,12 +88,12 @@ const ContactSection = () => {
             </p>
             <div className="flex gap-4">
               {[
-                { Icon: Github, href: 'https://github.com/VARA4u-tech' },
-                { Icon: Linkedin, href: 'https://linkedin.com/in/vara4u' },
-                { Icon: InstagramIcon, href: 'https://instagram.com/d_v_p6' },
+                { Icon: Github, href: 'https://github.com/TechMaestro-k' },
+                { Icon: Linkedin, href: 'https://www.linkedin.com/in/kushagra-maheshwari24/' },
+                { Icon: Code, href: 'https://leetcode.com/u/savvysolver004/' },
                 {
-                  Icon: BookOpen,
-                  href: 'https://durgavaraprasad.hashnode.dev/',
+                  Icon: Trophy,
+                  href: 'https://codolio.com/profile/Kushagra24',
                 },
               ].map(({ Icon, href }, i) => (
                 <a
@@ -164,9 +162,9 @@ const ContactSection = () => {
             onTouchStart={playClick}
             className="w-full group relative flex items-center justify-center gap-3 px-8 py-4 bg-black text-white font-mono uppercase tracking-widest overflow-hidden transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,0.5)] hover:-translate-y-1 active:scale-95 active:shadow-none touch-manipulation"
           >
-            <span className="relative z-10 font-bold">Send via WhatsApp</span>
-            <MessageCircle className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
-            <div className="absolute inset-0 bg-green-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+            <span className="relative z-10 font-bold">Send via Email</span>
+            <Mail className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
+            <div className="absolute inset-0 bg-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </button>
         </form>
       </div>

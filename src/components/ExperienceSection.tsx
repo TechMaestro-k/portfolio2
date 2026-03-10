@@ -2,11 +2,11 @@ import SectionBlock from './SectionBlock';
 
 const experiences = [
   {
-    role: 'MERN Stack Developer (Freelance)',
-    company: 'Academy of Tech Masters (AOTMS)',
-    period: '[23DEC 2025 – 23JAN 2026]',
+    role: 'AI Automation Engineer Intern',
+    company: 'The Ladder',
+    period: '[NOV 2025 – FEB 2026]',
     description:
-      '🚀Freelance Project – Successfully Delivered Completed a real-world client project with my team using [Tech Stack – e.g., React, Node.js, MongoDB]. Key learnings: 🔹 Building scalable features 🔹 Team collaboration & Git workflows 🔹 Meeting client expectations & deadlines.',
+      'Optimized legacy automation scripts reducing execution time by 93%. Architected Python-based scraping pipeline for 1,000+ companies. Developed intelligent agents using LangChain and LangGraph with n8n workflow integration. Located in Gurugram, India.',
   },
 ];
 

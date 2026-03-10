@@ -3,18 +3,17 @@ import { playClick, playHover } from '@/hooks/useSoundEffects';
 import {
   Github,
   Linkedin,
-  Twitter,
   Mail,
   ChevronDown,
-  InstagramIcon,
-  BookOpen,
+  Code,
+  Trophy,
 } from 'lucide-react';
 
 const roles = [
-  'Flutter Developer',
-  'React Engineer',
-  'Blockchain Builder',
+  'Software Developer',
   'Full-Stack Creator',
+  'AI Enthusiast',
+  'Competitive Programmer',
 ];
 
 const HeroSection = () => {
@@ -155,9 +154,9 @@ const HeroSection = () => {
           className="heading-brutal leading-[0.85]"
           style={{ fontSize: 'clamp(48px, 10vw, 130px)' }}
         >
-          Durga Vara
+          Kushagra
           <br />
-          <span className="text-foreground/20">Prasad.</span>
+          <span className="text-foreground/20">Maheshwari.</span>
         </h1>
 
         {/* Typewriter role */}
@@ -169,9 +168,8 @@ const HeroSection = () => {
             {displayText}
           </span>
           <span
-            className={`font-mono text-sm md:text-base text-foreground/70 ${
-              cursorVisible ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`font-mono text-sm md:text-base text-foreground/70 ${cursorVisible ? 'opacity-100' : 'opacity-0'
+              }`}
           >
             |
           </span>
@@ -183,12 +181,12 @@ const HeroSection = () => {
         {/* Tech tags */}
         <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-md mx-auto">
           {[
-            'Flutter',
-            'React',
-            'TypeScript',
-            'Firebase',
-            'Blockchain',
+            'React.js',
             'Node.js',
+            'C/C++',
+            'Python',
+            'MongoDB',
+            'Tailwind CSS',
           ].map((tech) => (
             <span
               key={tech}
@@ -205,27 +203,27 @@ const HeroSection = () => {
           {[
             {
               Icon: Github,
-              href: 'https://github.com/VARA4u-tech',
+              href: 'https://github.com/TechMaestro-k',
               label: 'GitHub',
             },
             {
               Icon: Linkedin,
-              href: 'https://www.linkedin.com/in/durga-vara-prasad-pappuri-1797701b6/',
+              href: 'https://www.linkedin.com/in/kushagra-maheshwari24/',
               label: 'LinkedIn',
             },
             {
-              Icon: InstagramIcon,
-              href: 'https://www.instagram.com/d_v_p6/',
-              label: 'Instagram',
+              Icon: Code,
+              href: 'https://leetcode.com/u/savvysolver004/',
+              label: 'LeetCode',
             },
             {
-              Icon: BookOpen,
-              href: 'https://durgavaraprasad.hashnode.dev/',
-              label: 'Blog',
+              Icon: Trophy,
+              href: 'https://codolio.com/profile/Kushagra24',
+              label: 'Codolio',
             },
             {
               Icon: Mail,
-              href: 'mailto:pappuridurgavaraprasad4pl@gmail.com',
+              href: 'mailto:maheshwarikushagra2004@gmail.com',
               label: 'Email',
             },
           ].map(({ Icon, href, label }, i) => (
@@ -247,7 +245,7 @@ const HeroSection = () => {
         <div className="mt-10">
           <a
             href="/resume.pdf"
-            download="Durga_Vara_Prasad_Resume.pdf"
+            download="Kushagra_Maheshwari_Resume.pdf"
             onClick={playClick}
             className="group relative inline-flex items-center gap-2 px-8 py-4 border-2 border-black bg-black text-white text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] hover:bg-white hover:text-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
           >
@@ -260,16 +258,16 @@ const HeroSection = () => {
       {/* Bottom-left info */}
       <div className="absolute bottom-10 left-6 md:left-10 z-10">
         <span className="text-foreground/80 text-xs tracking-[0.2em] uppercase font-mono font-medium">
-          www.prasad.dev
+          www.kushagra-maheshwari.dev
         </span>
       </div>
 
       {/* Bottom-right stats */}
       <div className="absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
         <div className="font-mono text-xs text-foreground/80 text-right leading-relaxed font-medium">
-          <p>const experience = "2+ years";</p>
-          <p>const projects = 10;</p>
-          <p>const passion = Infinity;</p>
+          <p>const experience = "1+ years";</p>
+          <p>const projects = 3;</p>
+          <p>const leetcode = "1800+";</p>
         </div>
       </div>
 

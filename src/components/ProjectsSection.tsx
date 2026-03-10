@@ -6,84 +6,41 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
-    title: 'AI Voice Editor',
+    title: 'AlgoVerse',
     isNew: true,
     description:
-      'A mystical, AI-driven document editor where your voice commands reshape text in real time. Upload a PDF, speak your intent, and watch the Gilded Voice Scribe bring your words to life.',
+      'A content-driven platform for in-depth DSA explanations covering 50+ problems. Features code snippets, visual diagrams, and step-by-step breakdowns. Real-time algorithm visualizer supporting 15+ sorting and graph algorithms with customizable speed and size controls.',
     tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'AI',
-      'Speech Recognition',
-      'Vite',
-      'Supabase',
+      'React.js',
+      'Tailwind CSS',
+      'Node.js',
+      'C++',
     ],
-    githubUrl: 'https://github.com/VARA4u-tech/AI-Voice-Editor',
-    liveUrl: 'https://ai-voice-editor-4rpa.vercel.app',
+    githubUrl: 'https://github.com/TechMaestro-k/AlgoVerse',
+    liveUrl: 'https://github.com/TechMaestro-k/AlgoVerse',
   },
   {
-    title: 'SafeTrip Pro',
+    title: 'PennyWise',
     description:
-      'A premium, AI-powered navigation and safety companion featuring real-time intelligence, drowsiness detection, SOS guardian network, and predictive analytics for a safer driving experience.',
+      'A full-stack MERN personal finance tracker with secure JWT authentication and MongoDB storage. Built Express RESTful APIs and a responsive React dashboard for real-time tracking, budget alerts, multi-account support, and analytics.',
     tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Supabase',
-      'Framer Motion',
-      'Vite',
+      'React.js',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Tailwind CSS',
+      'JWT',
     ],
-    githubUrl:
-      'https://github.com/VARA4u-tech/safe-trip-smart-driving-safety-application',
-    liveUrl: 'https://safe-trip-smart-driving-safety-appl.vercel.app',
+    githubUrl: 'https://github.com/TechMaestro-k/PennyWise-ExpenseTracker',
+    liveUrl: 'https://github.com/TechMaestro-k/PennyWise-ExpenseTracker',
   },
   {
-    title: 'Academy of Tech Masters (AOTMS)',
+    title: 'ByteScout',
     description:
-      'A premier tech education platform featuring AI-powered assistance, interactive student dashboards, and comprehensive course management. Delivered as a high-performance freelance project for a real-world client.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Vite',
-      'Zustand',
-      'Framer Motion',
-    ],
-    githubUrl: 'https://github.com/VARA4u-tech/AOTMS',
-    liveUrl: 'https://aotms.in',
-  },
-  {
-    title: 'Elara Cosmetics',
-    description:
-      'A luxury Ayurvedic e-commerce platform with a focus on premium user experience. Features category-based filtering, shopping cart, wishlist, and a custom WhatsApp-integrated checkout system.',
-    tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'Shadcn UI', 'Vitest'],
-    githubUrl:
-      'https://github.com/VARA4u-tech/Elara-Cosmetics-E--Commerce-Website-',
-    liveUrl: 'https://elara-cosmetics.vercel.app/',
-  },
-  {
-    title: 'EduPredict',
-    description:
-      'An AI-powered predictive analytics system for student success, featuring a unique comic book-inspired UI, interactive dashboards, and real-time at-risk student alerts.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Vite',
-      'Lucide React',
-      'Framer Motion',
-    ],
-    githubUrl: 'https://github.com/VARA4u-tech/EduPredict',
-    liveUrl: 'https://edu-pridect.vercel.app/',
-  },
-  {
-    title: 'SmartQuack',
-    description:
-      'A delightful, offline-first task manager with a gamified twist! Features a reactive duck mascot that changes moods based on your productivity progress.',
-    tags: ['Flutter', 'Riverpod', 'Firebase', 'Hive', 'Dart'],
-    githubUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
-    liveUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
+      'A fast, modular file search engine built in C++ using tokenization, indexing, and relevance scoring. Utilizes tries and hash maps for relevance matching and directory traversal in a terminal-driven environment on Linux.',
+    tags: ['C++', 'Linux', 'System APIs', 'Data Structures'],
+    githubUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
+    liveUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
   },
 ];
 

@@ -3,8 +3,8 @@ import {
   Linkedin,
   ArrowUp,
   Heart,
-  InstagramIcon,
-  BookOpen,
+  Code,
+  Trophy,
 } from 'lucide-react';
 
 const Footer = () => {
@@ -15,21 +15,21 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/VARA4u-tech', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/TechMaestro-k', label: 'GitHub' },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/vara4u',
+      href: 'https://www.linkedin.com/in/kushagra-maheshwari24/',
       label: 'LinkedIn',
     },
     {
-      icon: InstagramIcon,
-      href: 'https://instagram.com/d_v_p6',
-      label: 'Instagram',
+      icon: Code,
+      href: 'https://leetcode.com/u/savvysolver004/',
+      label: 'LeetCode',
     },
     {
-      icon: BookOpen,
-      href: 'https://durgavaraprasad.hashnode.dev/',
-      label: 'Blog',
+      icon: Trophy,
+      href: 'https://codolio.com/profile/Kushagra24',
+      label: 'Codolio',
     },
   ];
 
@@ -49,12 +49,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-2 space-y-6">
             <h2 className="text-2xl font-black uppercase tracking-tighter italic">
-              DURGA VARA PRASAD<span className="text-foreground">.....</span>
+              KUSHAGRA MAHESHWARI<span className="text-foreground">.....</span>
             </h2>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
-              Full-stack developer focused on building high-performance web
-              applications with clean, functional design and exceptional user
-              experience.
+              Software developer focused on building full-stack web
+              applications with MERN stack, AI automation, and competitive
+              programming excellence.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => (
@@ -109,12 +109,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6 px-4 md:px-12 lg:px-0">
           <p className="text-xs font-mono text-black/40 uppercase tracking-widest text-center md:text-left">
-            © {currentYear} Pappuri Durga Vara Prasad
+            © {currentYear} Kushagra Maheshwari
           </p>
           <p className="text-xs font-mono text-black/40 flex items-center justify-center gap-2 uppercase tracking-widest text-center md:text-right">
             Designed & Engineered with{' '}
             <Heart className="w-3.5 h-3.5 text-black fill-black animate-heartbeat inline-block" />{' '}
-            by Vara
+            by Kushagra
           </p>
         </div>
       </div>

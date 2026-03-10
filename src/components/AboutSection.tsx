@@ -1,6 +1,6 @@
 import SectionBlock from './SectionBlock';
 import AnimatedAvatar from './AnimatedAvatar';
-import { BookOpen } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const AboutSection = () => (
   <SectionBlock id="about" title="About me">
@@ -8,31 +8,31 @@ const AboutSection = () => (
       <AnimatedAvatar />
       <div className="flex-1">
         <p className="body-text max-w-2xl">
-          I'm a passionate developer with a deep interest in building clean,
-          performant, and user-centric digital experiences. I believe in the
-          power of minimal design and well-crafted code to communicate ideas
-          effectively.
+          I'm a passionate Software Developer and B.Tech CSE pre-final year
+          student at Abdul Kalam Technical University. I bring hands-on
+          experience as an <strong>AI Automation Engineer Intern</strong>, where
+          I optimized automation pipelines and built intelligent agents using
+          LangChain and LangGraph.
         </p>
         <p className="body-text max-w-2xl mt-6">
-          With experience across mobile and web platforms, I bring a unique
-          perspective to every project — blending technical rigor with creative
-          sensibility.
+          I'm an avid <strong>competitive programmer</strong> with a LeetCode
+          rating of 1800+ (Top 6.5% globally) and 600+ problems solved. I
+          thrive on building full-stack applications using the MERN stack and
+          exploring AI/ML and blockchain technologies.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
-          I embrace the philosophy of <strong>vibe coding</strong>—a modern
-          development approach where technical precision meets creative
-          intuition. By blending AI-assisted tools with a strong design
-          aesthetic, I rapidly translate ideas into fluid, highly polished
-          digital experiences while maintaining clean and scalable architecture.
+          I bring a unique blend of problem-solving skills, development
+          expertise, and a genuine enthusiasm for creating impactful software
+          solutions. Based in Ghaziabad, India.
         </p>
         <a
-          href="https://durgavaraprasad.hashnode.dev/"
+          href="https://github.com/TechMaestro-k"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-flex items-center gap-3 px-6 py-3 border-2 border-black bg-white text-black text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white"
         >
-          <BookOpen className="w-4 h-4" />
-          <span>Read My Technical Blog</span>
+          <Github className="w-4 h-4" />
+          <span>View My GitHub</span>
         </a>
       </div>
     </div>

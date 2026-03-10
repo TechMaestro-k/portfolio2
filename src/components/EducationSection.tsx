@@ -3,15 +3,9 @@ import SectionBlock from './SectionBlock';
 const education = [
   {
     degree:
-      'Master of Computer Applications (MCA), DVR & Dr. HS MIC College of Technology (Autonomous),Kanchikacherla',
-    school: 'Jawaharlal Nehru Technological University Kakinada',
-    year: '2024 – 2026(Pursuing)',
-  },
-  {
-    degree:
-      'Bachelor of Science (B.Sc-MSCs), Gowtham Degree College,Vijayawada',
-    school: 'Krishna University',
-    year: '2021 – 2024',
+      'Bachelor of Technology (B.Tech) in Computer Science Engineering',
+    school: 'Abdul Kalam Technical University, Uttar Pradesh',
+    year: '2023 – 2027 (Pursuing) • CGPA: 8.6/10',
   },
 ];
 
