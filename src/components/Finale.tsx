@@ -36,9 +36,9 @@ const Finale = () => {
 
   const marqueeTags = [
     'Kushagra Maheshwari 🚀',
-    'Software Dev | MERN | AI | Blockchain | CP',
+    'Software Dev | MERN | Blockchain | AI | CP',
     'Building scalable full-stack applications 🔖',
-    'LeetCode 1800+ | Competitive Programmer',
+    'LeetCode 1900+ Knight | 10+ Hackathons',
   ];
 
   return (

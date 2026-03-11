@@ -29,6 +29,7 @@ const skillCategories = [
     color: 'bg-green-50',
     skills: [
       'React.js',
+      'Next.js',
       'Tailwind CSS',
       'HTML5',
       'CSS3',
@@ -57,7 +58,10 @@ const skillCategories = [
       'Zapier',
       'Ethers.js',
       'Hardhat',
+      'Foundry',
       'Solidity',
+      'Ethereum',
+      'Polygon',
     ],
   },
   {
@@ -78,9 +82,10 @@ const skillCategories = [
     icon: <Trophy className="w-5 h-5" />,
     color: 'bg-yellow-50',
     skills: [
-      'LeetCode 1800+',
+      'LeetCode 1900+ (Knight)',
       'Codeforces 1200+',
-      '600+ Problems',
+      '650+ Problems',
+      '10+ Hackathons',
       'DSA',
       'Dynamic Programming',
     ],

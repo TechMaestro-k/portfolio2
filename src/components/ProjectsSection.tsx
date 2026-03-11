@@ -7,7 +7,6 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 const projects = [
   {
     title: 'AlgoVerse',
-    isNew: true,
     description:
       'A content-driven platform for in-depth DSA explanations covering 50+ problems. Features code snippets, visual diagrams, and step-by-step breakdowns. Real-time algorithm visualizer supporting 15+ sorting and graph algorithms with customizable speed and size controls.',
     tags: [
@@ -42,6 +41,38 @@ const projects = [
     githubUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
     liveUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
   },
+  {
+    title: 'GreenSetu',
+    isNew: true,
+    description:
+      'A full-stack Web3 supply chain verification platform on Algorand. An x402 AI agent autonomously pays for and verifies supply chain data integrity via micropayments, with ASA batch minting, immutable on-chain checkpoints, and tokenized carbon credits for sustainable farmers.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Algorand',
+      'TealScript',
+      'Node.js',
+      'x402',
+    ],
+    githubUrl: 'https://github.com/TechMaestro-k/GreenSetu',
+    liveUrl: 'https://greensetu-chi.vercel.app/',
+  },
+  {
+    title: 'ChessGame',
+    description:
+      'A fully functional Player vs Player chess game built from scratch in C++ using SFML. Features complete move validation, check/checkmate/stalemate detection, turn management, and an interactive GUI with piece highlighting.',
+    tags: ['C++', 'SFML', 'OOP', 'Game Dev'],
+    githubUrl: 'https://github.com/TechMaestro-k/ChessGame',
+    liveUrl: 'https://kushagra-119.itch.io/chessgame',
+  },
+  {
+    title: 'Password Generator',
+    description:
+      'A sleek random password generator with customizable length and character options. Features one-click copy to clipboard, strength indicator, and a clean responsive UI built with vanilla HTML, CSS, and JavaScript.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    githubUrl: 'https://github.com/TechMaestro-k/Password-Generator',
+    liveUrl: 'https://github.com/TechMaestro-k/Password-Generator',
+  },
 ];
 
 const ProjectsSection = () => (
@@ -55,7 +86,7 @@ const ProjectsSection = () => (
         >
           {'isNew' in project && project.isNew && (
             <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-2 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform">
-              LATEST WORK
+              NEW
             </div>
           )}
           <div>

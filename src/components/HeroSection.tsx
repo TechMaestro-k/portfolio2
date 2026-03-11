@@ -265,9 +265,9 @@ const HeroSection = () => {
       {/* Bottom-right stats */}
       <div className="absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
         <div className="font-mono text-xs text-foreground/80 text-right leading-relaxed font-medium">
-          <p>const experience = "1+ years";</p>
-          <p>const projects = 3;</p>
-          <p>const leetcode = "1800+";</p>
+          <p>const experience = "4+ months";</p>
+          <p>const projects = 6;</p>
+          <p>const leetcode = "1900+ 🛡️";</p>
         </div>
       </div>
 

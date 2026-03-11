@@ -16,7 +16,8 @@ const AboutSection = () => (
         </p>
         <p className="body-text max-w-2xl mt-6">
           I'm an avid <strong>competitive programmer</strong> with a LeetCode
-          rating of 1800+ (Top 6.5% globally) and 600+ problems solved. I
+          rating of <strong>1900+ (Knight Badge, Top 5% globally)</strong> and 650+ problems solved. I've
+          attended <strong>10+ hackathons</strong>, been a <strong>finalist in 2</strong> and <strong>semi-finalist in 3</strong>. I
           thrive on building full-stack applications using the MERN stack and
           exploring AI/ML and blockchain technologies.
         </p>

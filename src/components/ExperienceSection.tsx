@@ -4,7 +4,7 @@ const experiences = [
   {
     role: 'AI Automation Engineer Intern',
     company: 'The Ladder',
-    period: '[NOV 2025 – FEB 2026]',
+    period: '[NOV 2025 – FEB 2026] • 4 months',
     description:
       'Optimized legacy automation scripts reducing execution time by 93%. Architected Python-based scraping pipeline for 1,000+ companies. Developed intelligent agents using LangChain and LangGraph with n8n workflow integration. Located in Gurugram, India.',
   },

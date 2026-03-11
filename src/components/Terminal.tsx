@@ -99,28 +99,38 @@ const Terminal = () => {
           </div>
         );
       case 'about':
-        return "I'm Kushagra Maheshwari, a B.Tech CSE student at AKTU and software developer specializing in MERN stack, AI automation, and competitive programming. LeetCode rated 1800+ with 600+ problems solved.";
+        return "I'm Kushagra Maheshwari, a B.Tech CSE student at AKTU and software developer specializing in MERN stack, AI automation, blockchain, and competitive programming. LeetCode rated 1900+ (Knight Badge) with 650+ problems solved. Attended 10+ hackathons — finalist in 2, semi-finalist in 3.";
       case 'skills':
         return (
           <div>
             <p className="mb-1">CORE STACK:</p>
             <p>• C / C++ / Python / JavaScript</p>
-            <p>• React / TypeScript / Tailwind CSS</p>
+            <p>• React / Next.js / TypeScript / Tailwind CSS</p>
             <p>• Node.js / Express / MongoDB</p>
-            <p>• LangChain / LangGraph / Solidity</p>
+            <p>• Solidity / Ethereum / Polygon / Foundry</p>
+            <p>• LangChain / LangGraph / n8n</p>
           </div>
         );
       case 'projects':
         return (
           <div className="flex flex-col gap-1">
             <a href="#projects" className="text-blue-400 hover:underline">
-              1. AlgoVerse (Algorithm Visualizer)
+              1. GreenSetu (Web3 Supply Chain on Algorand)
             </a>
             <a href="#projects" className="text-blue-400 hover:underline">
-              2. PennyWise (Expense Tracker)
+              2. AlgoVerse (Algorithm Visualizer)
             </a>
             <a href="#projects" className="text-blue-400 hover:underline">
-              3. ByteScout (File Explorer)
+              3. PennyWise (Expense Tracker)
+            </a>
+            <a href="#projects" className="text-blue-400 hover:underline">
+              4. ChessGame (C++ SFML)
+            </a>
+            <a href="#projects" className="text-blue-400 hover:underline">
+              5. ByteScout (File Search Engine)
+            </a>
+            <a href="#projects" className="text-blue-400 hover:underline">
+              6. Password Generator (HTML/CSS/JS)
             </a>
           </div>
         );
