@@ -1,79 +1,71 @@
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, FileText, Gamepad2 } from 'lucide-react';
 import SectionBlock from './SectionBlock';
-import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
-    title: 'AlgoVerse',
+    title: 'CareLoop',
+    isNew: true,
     description:
-      'A content-driven platform for in-depth DSA explanations covering 50+ problems. Features code snippets, visual diagrams, and step-by-step breakdowns. Real-time algorithm visualizer supporting 15+ sorting and graph algorithms with customizable speed and size controls.',
-    tags: [
-      'React.js',
-      'Tailwind CSS',
-      'Node.js',
-      'C++',
-    ],
-    githubUrl: 'https://github.com/TechMaestro-k/AlgoVerse',
-    liveUrl: 'https://github.com/TechMaestro-k/AlgoVerse',
+      'An agentic AI care companion preventing post-discharge hospital readmissions. 3 LangGraph agents fuse clinical entities with 6-dimension SDOH signals to run 30-day WhatsApp check-ins. A dual-model LLM pipeline (Llama 3.3 70B + 3.1 8B) triages replies into 4 severity tiers and auto-escalates red flags to caregivers and doctors.',
+    tags: ['FastAPI', 'LangGraph', 'React', 'Supabase', 'Twilio', 'Python'],
+    githubUrl: 'https://github.com/TechMaestro-k/CareLoop',
+    liveUrl: 'https://www.careloops.tech',
+    liveLabel: 'Live Demo',
   },
   {
-    title: 'PennyWise',
+    title: 'Distributed Job Queue',
+    isNew: true,
     description:
-      'A full-stack MERN personal finance tracker with secure JWT authentication and MongoDB storage. Built Express RESTful APIs and a responsive React dashboard for real-time tracking, budget alerts, multi-account support, and analytics.',
-    tags: [
-      'React.js',
-      'Node.js',
-      'Express',
-      'MongoDB',
-      'Tailwind CSS',
-      'JWT',
-    ],
-    githubUrl: 'https://github.com/TechMaestro-k/PennyWise-ExpenseTracker',
-    liveUrl: 'https://github.com/TechMaestro-k/PennyWise-ExpenseTracker',
-  },
-  {
-    title: 'ByteScout',
-    description:
-      'A fast, modular file search engine built in C++ using tokenization, indexing, and relevance scoring. Utilizes tries and hash maps for relevance matching and directory traversal in a terminal-driven environment on Linux.',
-    tags: ['C++', 'Linux', 'System APIs', 'Data Structures'],
-    githubUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
-    liveUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
+      'A horizontally-scalable, at-least-once job queue in Go on Redis, designed for 1M+ jobs/day. Crash-safe recovery requeues jobs from dead workers, with atomic Lua-scripted enqueue/claim, exponential-backoff retries with jitter, dead-letter queues, delayed jobs, and a documented migration path to Redis Cluster.',
+    tags: ['Go', 'Redis', 'Lua', 'Docker', 'Distributed Systems'],
+    githubUrl: 'https://github.com/TechMaestro-k/Distributed-Job-queue',
+    liveUrl:
+      'https://github.com/TechMaestro-k/Distributed-Job-queue/blob/main/DESIGN.md',
+    liveLabel: 'Design Doc',
+    liveIcon: 'doc',
   },
   {
     title: 'GreenSetu',
-    isNew: true,
     description:
       'A full-stack Web3 supply chain verification platform on Algorand. An x402 AI agent autonomously pays for and verifies supply chain data integrity via micropayments, with ASA batch minting, immutable on-chain checkpoints, and tokenized carbon credits for sustainable farmers.',
-    tags: [
-      'Next.js',
-      'TypeScript',
-      'Algorand',
-      'TealScript',
-      'Node.js',
-      'x402',
-    ],
+    tags: ['Next.js', 'TypeScript', 'Algorand', 'TealScript', 'x402'],
     githubUrl: 'https://github.com/TechMaestro-k/GreenSetu',
     liveUrl: 'https://greensetu-chi.vercel.app/',
+    liveLabel: 'Live Demo',
   },
   {
     title: 'ChessGame',
     description:
-      'A fully functional Player vs Player chess game built from scratch in C++ using SFML. Features complete move validation, check/checkmate/stalemate detection, turn management, and an interactive GUI with piece highlighting.',
+      'A fully functional Player vs Player chess game built from scratch in C++ using SFML, with 100% legal-move accuracy across all 6 piece types. Features check/checkmate/stalemate detection validated across 50+ unit tests, 8 modular OOP classes, and an interactive GUI with piece highlighting.',
     tags: ['C++', 'SFML', 'OOP', 'Game Dev'],
     githubUrl: 'https://github.com/TechMaestro-k/ChessGame',
     liveUrl: 'https://kushagra-119.itch.io/chessgame',
+    liveLabel: 'Play It',
+    liveIcon: 'game',
   },
   {
-    title: 'Password Generator',
+    title: 'ByteScout',
     description:
-      'A sleek random password generator with customizable length and character options. Features one-click copy to clipboard, strength indicator, and a clean responsive UI built with vanilla HTML, CSS, and JavaScript.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/TechMaestro-k/Password-Generator',
-    liveUrl: 'https://github.com/TechMaestro-k/Password-Generator',
+      'A CLI-based file search engine in C++ returning top-k ranked documents per query — a Trie for prefix lookup, hash maps for term-document indexing, and a max-heap for TF-IDF score ranking. Built across 8+ modular classes with a Makefile build, validated for zero memory leaks via Valgrind.',
+    tags: ['C++', 'Valgrind', 'Linux', 'Data Structures'],
+    githubUrl: 'https://github.com/TechMaestro-k/ByteScout-FileSearchEngine',
+  },
+  {
+    title: 'AlgoVerse',
+    description:
+      'A content-driven platform for in-depth DSA explanations covering 50+ problems across DP and Graphs. Features code snippets, visual diagrams, step-by-step breakdowns, and a real-time algorithm visualizer supporting 15+ sorting and graph algorithms with customizable speed and size controls.',
+    tags: ['React.js', 'Tailwind CSS', 'Node.js', 'C++'],
+    githubUrl: 'https://github.com/TechMaestro-k/AlgoVerse',
   },
 ];
+
+const LiveIcon = ({ type }) => {
+  if (type === 'doc') return <FileText className="w-3.5 h-3.5" />;
+  if (type === 'game') return <Gamepad2 className="w-3.5 h-3.5" />;
+  return <ExternalLink className="w-3.5 h-3.5" />;
+};
 
 const ProjectsSection = () => (
   <SectionBlock id="projects" title="Projects">
@@ -84,7 +76,7 @@ const ProjectsSection = () => (
           onMouseEnter={playHover}
           className="group relative border-2 border-black p-6 flex flex-col justify-between hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 bg-white min-w-[290px] w-[85vw] md:w-auto md:min-w-0 snap-start"
         >
-          {'isNew' in project && project.isNew && (
+          {project.isNew && (
             <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-2 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform">
               NEW
             </div>
@@ -120,16 +112,18 @@ const ProjectsSection = () => (
               <Github className="w-3.5 h-3.5" />
               Source
             </a>
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={playClick}
-              className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              Live Demo
-            </a>
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={playClick}
+                className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white"
+              >
+                <LiveIcon type={project.liveIcon} />
+                {project.liveLabel || 'Live Demo'}
+              </a>
+            )}
           </div>
         </div>
       ))}
