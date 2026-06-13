@@ -180,14 +180,15 @@ const HeroSection = () => {
 
         {/* Tech tags */}
         <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-md mx-auto">
-          {[
-            'React.js',
-            'Node.js',
-            'C/C++',
-            'Python',
-            'MongoDB',
-            'Tailwind CSS',
-          ].map((tech) => (
+  {[
+    'Go',
+    'C/C++',
+    'Python',
+    'React.js',
+    'Node.js',
+    'Redis',
+    'LangGraph',
+  ].map((tech) => (
             <span
               key={tech}
               className="px-3 py-1 font-mono text-xs border-2 border-foreground/40 text-foreground/80 font-medium tracking-wider hover:bg-foreground hover:text-background transition-all duration-300 cursor-default"
