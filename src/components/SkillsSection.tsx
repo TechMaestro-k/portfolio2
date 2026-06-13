@@ -1,7 +1,9 @@
 import {
   Code2,
   Server,
+  Database,
   Cpu,
+  Blocks,
   Wrench,
   Box,
   Trophy,
@@ -17,9 +19,10 @@ const skillCategories = [
     color: 'bg-blue-50',
     skills: [
       'C/C++',
-      'JavaScript',
+      'Go',
       'Python',
-      'HTML/CSS',
+      'JavaScript',
+      'TypeScript',
       'Solidity',
     ],
   },
@@ -36,30 +39,54 @@ const skillCategories = [
     ],
   },
   {
-    title: 'Backend & Database',
+    title: 'Backend & Systems',
     icon: <Server className="w-5 h-5" />,
     color: 'bg-orange-50',
     skills: [
       'Node.js',
       'Express.js',
-      'MongoDB',
+      'FastAPI',
+      'Redis',
       'REST APIs',
+      'Distributed Systems',
       'JWT Auth',
     ],
   },
   {
-    title: 'AI & Blockchain',
+    title: 'Databases',
+    icon: <Database className="w-5 h-5" />,
+    color: 'bg-teal-50',
+    skills: [
+      'MongoDB',
+      'PostgreSQL',
+      'Supabase',
+      'MySQL',
+      'Firebase',
+    ],
+  },
+  {
+    title: 'AI & Automation',
     icon: <Cpu className="w-5 h-5" />,
     color: 'bg-purple-50',
     skills: [
       'LangChain',
       'LangGraph',
+      'LLM Pipelines',
+      'AI Agents',
       'n8n',
       'Zapier',
+    ],
+  },
+  {
+    title: 'Blockchain & Web3',
+    icon: <Blocks className="w-5 h-5" />,
+    color: 'bg-indigo-50',
+    skills: [
+      'Algorand',
+      'TealScript',
       'Ethers.js',
       'Hardhat',
       'Foundry',
-      'Solidity',
       'Ethereum',
       'Polygon',
     ],
@@ -71,10 +98,13 @@ const skillCategories = [
     skills: [
       'Git',
       'GitHub',
+      'Docker',
+      'Linux',
+      'Valgrind',
       'Postman',
-      'npm',
       'VS Code',
       'Remix IDE',
+      'npm',
     ],
   },
   {
@@ -88,16 +118,6 @@ const skillCategories = [
       '10+ Hackathons',
       'DSA',
       'Dynamic Programming',
-    ],
-  },
-  {
-    title: 'CS Fundamentals',
-    icon: <GraduationCap className="w-5 h-5" />,
-    color: 'bg-red-50',
-    skills: [
-      'Data Structures & Algorithms',
-      'Operating Systems',
-      'System Design',
     ],
   },
 ];
@@ -138,11 +158,40 @@ const SkillsSection = () => {
             </div>
           ))}
 
+          {/* CS Fundamentals — full-width style card */}
+          <div className="group border-2 border-black p-6 bg-white hover:-translate-y-1 transition-all duration-300 relative md:col-span-2 lg:col-span-2">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 border-2 border-black bg-black text-white group-hover:bg-white group-hover:text-black transition-colors">
+                <GraduationCap className="w-5 h-5" />
+              </div>
+              <h3 className="font-mono text-sm font-bold uppercase tracking-wide">
+                CS Fundamentals
+              </h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                'Data Structures & Algorithms',
+                'Operating Systems',
+                'Object-Oriented Programming',
+                'System Design',
+                'DBMS',
+                'Computer Networks',
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-2 py-1 border border-black/10 text-[11px] font-mono hover:border-black hover:bg-black/5 transition-all cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
           {/* Final "Load" Card */}
           <div className="border-2 border-black p-6 bg-black/5 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity">
             <Box className="w-8 h-8 mb-4 opacity-20" />
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] font-medium">
-              // Always Learning...
+              {'// Always Learning...'}
             </p>
           </div>
         </div>
